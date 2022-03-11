@@ -8,6 +8,7 @@ class SpringBootDemoApplicationTests {
 
 	@Test
 	fun contextLoads() {
+
 	}
 
 }
