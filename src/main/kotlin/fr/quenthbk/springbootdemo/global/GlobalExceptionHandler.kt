@@ -4,13 +4,12 @@ import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.ControllerAdvice
 import org.springframework.web.bind.annotation.ExceptionHandler
-import javax.persistence.EntityNotFoundException
 
 @ControllerAdvice
 class GlobalExceptionHandler {
 
   @ExceptionHandler(
-    EntityNotFoundException::class
+    ResourceNotFoundException::class
   )
   fun handleNotFoundException(exception: java.lang.Exception): ResponseEntity<ErrorResponse> {
     return buildErrorResponse(

@@ -12,7 +12,7 @@ class ProductServiceImpl: ProductService {
   override fun getById(id: Long): Product {
     val opt = repo.findById(id)
     if (opt.isEmpty) {
-      throw ProductNotFound(id)
+      throw ProductNotFoundException(id)
     }
     return opt.get()
   }
