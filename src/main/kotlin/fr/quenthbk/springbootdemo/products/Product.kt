@@ -1,4 +1,4 @@
-package fr.quenthbk.springbootdemo.model
+package fr.quenthbk.springbootdemo.products
 
 import org.hibernate.Hibernate
 import javax.persistence.*

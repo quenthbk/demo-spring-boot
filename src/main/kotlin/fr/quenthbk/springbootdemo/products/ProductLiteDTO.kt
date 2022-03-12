@@ -1,9 +1,9 @@
-package fr.quenthbk.springbootdemo.dto
+package fr.quenthbk.springbootdemo.products
 
 import javax.validation.constraints.NotEmpty
 
 data class ProductLiteDTO(
-  var id: Int = 0,
+  var id: Long = 0,
 
   @field:NotEmpty
   var name: String = "",
